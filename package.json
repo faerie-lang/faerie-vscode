@@ -1,0 +1,29 @@
+{
+    "name": "faerie-lang",
+    "repository": {
+        "url": "https://github.com/faerie-lang/faerie-vscode.git",
+        "type": "git"
+    },
+    "displayName": "Faerie Lang",
+    "description": "Syntax highlighting for faerie",
+    "version": "0.0.1",
+    "engines": {
+        "vscode": "^1.67.0"
+    },
+    "categories": [
+        "Programming Languages"
+    ],
+    "contributes": {
+        "languages": [{
+            "id": "faerie",
+            "aliases": ["Faerie", "faerie"],
+            "extensions": [".fae"],
+            "configuration": "./language-configuration.json"
+        }],
+        "grammars": [{
+            "language": "faerie",
+            "scopeName": "source.fae",
+            "path": "./syntaxes/faerie.tmLanguage.json"
+        }]
+    }
+}
